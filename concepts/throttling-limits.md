@@ -368,13 +368,19 @@ The preceding limits apply to the following resources:
 
 ## Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+Outlook service limits for user calls are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an client application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
 
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
 | 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+
+App only calls (without a calling user) are subject to a limit of distinct mailboxes accessed. The following limits apply to the public cloud as well as [national cloud deployments](./deployments.md).
+
+| Limit                                                      | Applies to      |
+|------------------------------------------------------------|-----------------|
+| 10,000 distinct mailboxes in a 10 minute period                  | v1.0 and beta endpoints |
 
 ### Outlook service resources
 
